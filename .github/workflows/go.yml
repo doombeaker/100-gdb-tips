@@ -19,4 +19,6 @@ jobs:
         go-version: 1.18
 
     - name: Build
-      run: sh ./build.sh
+      run: |
+          go get github.com/fairlyblank/md2min
+          sh ./build.sh
